@@ -1,0 +1,743 @@
+{
+  "Version": 1,
+  "Hash": "6NOB+3Ca5c7bQr6AXZ8G11BduuHt2UIkCo+Xfh0uOfI=",
+  "Source": "P2WebMVC",
+  "BasePath": "_content/P2WebMVC",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "P2WebMVC\\wwwroot",
+      "Source": "P2WebMVC",
+      "ContentRoot": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\",
+      "BasePath": "_content/P2WebMVC",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\obj\\Debug\\net8.0\\scopedcss\\bundle\\P2WebMVC.styles.css",
+      "SourceId": "P2WebMVC",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/P2WebMVC",
+      "RelativePath": "P2WebMVC#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "0154ehx4y2",
+      "Integrity": "jEv9vUCuIAGW18Mmy/kvgAOOekeYFslbZcAa5wAR5hk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\obj\\Debug\\net8.0\\scopedcss\\bundle\\P2WebMVC.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\P2WebMVC.bundle.scp.css",
+      "SourceId": "P2WebMVC",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/P2WebMVC",
+      "RelativePath": "P2WebMVC#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "0154ehx4y2",
+      "Integrity": "jEv9vUCuIAGW18Mmy/kvgAOOekeYFslbZcAa5wAR5hk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\P2WebMVC.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\css\\input.css",
+      "SourceId": "P2WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\",
+      "BasePath": "_content/P2WebMVC",
+      "RelativePath": "css/input#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s2nrpejjgi",
+      "Integrity": "lE5uEsAGemdng2p4rWxAlbgp+Wa0TzO8lc/vFAGrPBA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\input.css"
+    },
+    {
+      "Identity": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\css\\output.css",
+      "SourceId": "P2WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\",
+      "BasePath": "_content/P2WebMVC",
+      "RelativePath": "css/output#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vs8kiwos7g",
+      "Integrity": "j7sfgs9DlKBHcWTJ/wyokPIfWdXtj+w7s5lhOm954tM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\output.css"
+    },
+    {
+      "Identity": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\css\\site.css",
+      "SourceId": "P2WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\",
+      "BasePath": "_content/P2WebMVC",
+      "RelativePath": "css/site#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ekctcwngo5",
+      "Integrity": "Ip9Ya2PKDZ+Ak53luKiazjjbNyKydW0Uqx5qn6LYdUU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\favicon.ico",
+      "SourceId": "P2WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\",
+      "BasePath": "_content/P2WebMVC",
+      "RelativePath": "favicon#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "61n19gt1b8",
+      "Integrity": "Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\js\\site.js",
+      "SourceId": "P2WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\",
+      "BasePath": "_content/P2WebMVC",
+      "RelativePath": "js/site#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "n8h9t72f33",
+      "Integrity": "h1gre/0/DH5uQZTk5dPNnhEW7S6+H4OPdttO4IkhfoI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/input.css",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\css\\input.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lE5uEsAGemdng2p4rWxAlbgp+Wa0TzO8lc/vFAGrPBA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Sep 2025 05:26:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lE5uEsAGemdng2p4rWxAlbgp+Wa0TzO8lc/vFAGrPBA="
+        }
+      ]
+    },
+    {
+      "Route": "css/input.s2nrpejjgi.css",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\css\\input.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lE5uEsAGemdng2p4rWxAlbgp+Wa0TzO8lc/vFAGrPBA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Sep 2025 05:26:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s2nrpejjgi"
+        },
+        {
+          "Name": "label",
+          "Value": "css/input.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lE5uEsAGemdng2p4rWxAlbgp+Wa0TzO8lc/vFAGrPBA="
+        }
+      ]
+    },
+    {
+      "Route": "css/output.css",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\css\\output.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34400"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j7sfgs9DlKBHcWTJ/wyokPIfWdXtj+w7s5lhOm954tM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Sep 2025 05:26:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j7sfgs9DlKBHcWTJ/wyokPIfWdXtj+w7s5lhOm954tM="
+        }
+      ]
+    },
+    {
+      "Route": "css/output.vs8kiwos7g.css",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\css\\output.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34400"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j7sfgs9DlKBHcWTJ/wyokPIfWdXtj+w7s5lhOm954tM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Sep 2025 05:26:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vs8kiwos7g"
+        },
+        {
+          "Name": "label",
+          "Value": "css/output.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j7sfgs9DlKBHcWTJ/wyokPIfWdXtj+w7s5lhOm954tM="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "889"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ip9Ya2PKDZ+Ak53luKiazjjbNyKydW0Uqx5qn6LYdUU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 29 Sep 2025 07:09:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ip9Ya2PKDZ+Ak53luKiazjjbNyKydW0Uqx5qn6LYdUU="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.ekctcwngo5.css",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "889"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ip9Ya2PKDZ+Ak53luKiazjjbNyKydW0Uqx5qn6LYdUU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 29 Sep 2025 07:09:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ekctcwngo5"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ip9Ya2PKDZ+Ak53luKiazjjbNyKydW0Uqx5qn6LYdUU="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.61n19gt1b8.ico",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Sep 2025 05:26:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "61n19gt1b8"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Sep 2025 05:26:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.js",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "231"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h1gre/0/DH5uQZTk5dPNnhEW7S6+H4OPdttO4IkhfoI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Sep 2025 05:26:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-h1gre/0/DH5uQZTk5dPNnhEW7S6+H4OPdttO4IkhfoI="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.n8h9t72f33.js",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "231"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h1gre/0/DH5uQZTk5dPNnhEW7S6+H4OPdttO4IkhfoI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 22 Sep 2025 05:26:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n8h9t72f33"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-h1gre/0/DH5uQZTk5dPNnhEW7S6+H4OPdttO4IkhfoI="
+        }
+      ]
+    },
+    {
+      "Route": "P2WebMVC.0154ehx4y2.bundle.scp.css",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\P2WebMVC.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "266"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jEv9vUCuIAGW18Mmy/kvgAOOekeYFslbZcAa5wAR5hk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Oct 2025 05:02:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0154ehx4y2"
+        },
+        {
+          "Name": "label",
+          "Value": "P2WebMVC.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jEv9vUCuIAGW18Mmy/kvgAOOekeYFslbZcAa5wAR5hk="
+        }
+      ]
+    },
+    {
+      "Route": "P2WebMVC.0154ehx4y2.styles.css",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\obj\\Debug\\net8.0\\scopedcss\\bundle\\P2WebMVC.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "266"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jEv9vUCuIAGW18Mmy/kvgAOOekeYFslbZcAa5wAR5hk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Oct 2025 05:02:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0154ehx4y2"
+        },
+        {
+          "Name": "label",
+          "Value": "P2WebMVC.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jEv9vUCuIAGW18Mmy/kvgAOOekeYFslbZcAa5wAR5hk="
+        }
+      ]
+    },
+    {
+      "Route": "P2WebMVC.bundle.scp.css",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\P2WebMVC.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "266"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jEv9vUCuIAGW18Mmy/kvgAOOekeYFslbZcAa5wAR5hk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Oct 2025 05:02:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jEv9vUCuIAGW18Mmy/kvgAOOekeYFslbZcAa5wAR5hk="
+        }
+      ]
+    },
+    {
+      "Route": "P2WebMVC.styles.css",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\obj\\Debug\\net8.0\\scopedcss\\bundle\\P2WebMVC.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "266"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jEv9vUCuIAGW18Mmy/kvgAOOekeYFslbZcAa5wAR5hk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 11 Oct 2025 05:02:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jEv9vUCuIAGW18Mmy/kvgAOOekeYFslbZcAa5wAR5hk="
+        }
+      ]
+    }
+  ]
+}

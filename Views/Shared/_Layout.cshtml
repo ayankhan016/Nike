@@ -1,0 +1,164 @@
+﻿﻿﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] | Nike</title>
+
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/output.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="bg-white text-gray-900">
+
+    <header class="border-b border-gray-200 bg-white">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <a asp-area="" asp-controller="Home" asp-action="Index">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg"
+                     alt="Nike" class="h-6 w-auto"> <!-- very small logo -->
+            </a>
+        </div>
+
+        <!-- Center Links -->
+        <div class="hidden md:flex items-center gap-4">
+            <a asp-area="" asp-controller="Product" asp-action="Index" asp-route-Category="General"
+               class="text-xs font-bold uppercase hover:text-black transition">Men</a>
+            <a asp-area="" asp-controller="Product" asp-action="Index" asp-route-Category="Electronics"
+               class="text-xs font-bold uppercase hover:text-black transition">Women</a>
+            <a asp-area="" asp-controller="Product" asp-action="Index" asp-route-Category="Clothing"
+               class="text-xs font-bold uppercase hover:text-black transition">Snkrs</a>
+        </div>
+
+        <!-- Right Side: Cart and Sign In -->
+        <div class="flex items-center gap-4">
+            <!-- Cart Icon -->
+            <a asp-controller="User" asp-action="Cart" class="hover:text-gray-700 relative">
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"></path>
+                </svg>
+            </a>
+
+            <!-- Sign In -->
+            <a asp-controller="User" asp-action="Login"
+               class="text-xs font-bold uppercase hover:text-black transition">Sign In</a>
+        </div>
+    </nav>
+</header>
+
+<!-- Notifications -->
+<div class="notification_bar px-4 max-w-3xl mx-auto mt-4 space-y-3">
+    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage as string))
+    {
+        <div class="relative flex items-start bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg" role="alert">
+            <svg class="w-5 h-5 mt-1 mr-2 flex-shrink-0 text-red-600" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24">
+                <path d="M18.364 5.636l-12.728 12.728M5.636 5.636l12.728 12.728" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="flex-grow">@ViewBag.ErrorMessage</span>
+            <button type="button" onclick="this.parentElement.remove()" class="text-red-700 hover:text-red-900 ml-4 font-bold text-xl leading-none">&times;</button>
+        </div>
+    }
+
+    @if (!string.IsNullOrEmpty(ViewBag.SuccessMessage as string))
+    {
+        <div class="relative flex items-start bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg" role="alert">
+            <svg class="w-5 h-5 mt-1 mr-2 flex-shrink-0 text-green-600" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24">
+                <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="flex-grow">@ViewBag.SuccessMessage</span>
+            <button type="button" onclick="this.parentElement.remove()" class="text-green-700 hover:text-green-900 ml-4 font-bold text-xl leading-none">&times;</button>
+        </div>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="relative flex items-start bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg" role="alert">
+            <svg class="w-5 h-5 mt-1 mr-2 flex-shrink-0 text-red-600" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24">
+                <path d="M18.364 5.636l-12.728 12.728M5.636 5.636l12.728 12.728" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="flex-grow">@TempData["ErrorMessage"]</span>
+            <button type="button" onclick="this.parentElement.remove()" class="text-red-700 hover:text-red-900 ml-4 font-bold text-xl leading-none">&times;</button>
+        </div>
+    }
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="relative flex items-start bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg" role="alert">
+            <svg class="w-5 h-5 mt-1 mr-2 flex-shrink-0 text-green-600" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24">
+                <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="flex-grow">@TempData["SuccessMessage"]</span>
+            <button type="button" onclick="this.parentElement.remove()" class="text-green-700 hover:text-green-900 ml-4 font-bold text-xl leading-none">&times;</button>
+        </div>
+    }
+</div>
+
+<!-- Main Body -->
+<div style="min-height: 90vh;" class="bg-white">
+    @RenderBody()
+</div>
+
+<!-- Footer -->
+<footer class="bg-white text-black border-t border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Logo & Description -->
+        <div>
+            <a asp-controller="Home" asp-action="Index" class="flex items-center mb-4">
+                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg"  class="h-6 w-auto" />
+            </a>
+            <p class="text-sm text-gray-700">
+                Nike delivers inspiration and innovation to every athlete* in the world.
+            </p>
+            <p class="text-xs text-gray-500 mt-1">*If you have a body, you are an athlete.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+            <h4 class="text-sm font-semibold mb-2">Quick Links</h4>
+            <ul class="space-y-1 text-gray-700 text-sm">
+                <li><a asp-controller="Home" asp-action="Index" class="hover:text-gray-900 transition">Home</a></li>
+                <li><a asp-controller="User" asp-action="Login" class="hover:text-gray-900 transition">Login</a></li>
+                <li><a asp-controller="User" asp-action="Register" class="hover:text-gray-900 transition">Register</a></li>
+                <li><a asp-controller="Product" asp-action="Index" class="hover:text-gray-900 transition">Shop</a></li>
+            </ul>
+        </div>
+
+        <!-- Categories -->
+        <div>
+            <h4 class="text-sm font-semibold mb-2">Categories</h4>
+            <ul class="space-y-1 text-gray-700 text-sm">
+                <li><a asp-controller="Product" asp-action="Index" asp-route-Category="Electronics" class="hover:text-gray-900 transition">Electronics</a></li>
+                <li><a asp-controller="Product" asp-action="Index" asp-route-Category="Clothing" class="hover:text-gray-900 transition">Clothing</a></li>
+                <li><a asp-controller="Product" asp-action="Index" asp-route-Category="Automotive" class="hover:text-gray-900 transition">Automotive</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact & Social -->
+        <div>
+            <h4 class="text-sm font-semibold mb-2">Connect</h4>
+            <ul class="space-y-1 text-gray-700 text-sm">
+                <li>Email: support@nike.com</li>
+                <li>Phone: +1 (800) 806-6453</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="text-center py-4 border-t border-gray-200 text-xs text-gray-500">
+        &copy; @DateTime.Now.Year Nike, Inc. All Rights Reserved.
+    </div>
+</footer>
+
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

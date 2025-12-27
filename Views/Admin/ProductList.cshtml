@@ -1,0 +1,108 @@
+@model IEnumerable<P2WebMVC.Models.DomainModels.Product>
+@{
+    ViewData["Title"] = "Product List";
+}
+
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #111;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px 35px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 30px;
+    border-left: 5px solid #111;
+    padding-left: 10px;
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #111;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+.btn-view {
+    background-color: #111;
+    color: #fff;
+    border-radius: 50px;
+    padding: 6px 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-view:hover {
+    background-color: #333;
+    color: #fff;
+}
+</style>
+
+<div class="container">
+    <h3>Product List</h3>
+
+    @if (!Model.Any())
+    {
+        <p class="text-danger">No products available.</p>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price (₹)</th>
+                    <th>Stock</th>
+                    <th>Category</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model)
+                {
+                    <tr>
+                        <td>@product.ProductName</td>
+                        <td>@product.ProductPrice</td>
+                        <td>@product.ProductStock</td>
+                        <td>@product.Category</td>
+                        <td>
+                            <a class="btn-view" asp-controller="Product" asp-action="Details" asp-route-ProductId="@product.ProductId">View</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

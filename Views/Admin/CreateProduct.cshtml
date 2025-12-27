@@ -1,0 +1,190 @@
+﻿@model P2WebMVC.Models.DomainModels.Product
+@using Microsoft.AspNetCore.Mvc.Rendering
+@using P2WebMVC.Types
+@{
+    ViewData["Title"] = "Create Product";
+}
+
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #111;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px 35px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 30px;
+    border-left: 5px solid #111;
+    padding-left: 10px;
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    border-color: #111;
+    box-shadow: 0 0 0 0.2rem rgba(17,17,17,0.1);
+    outline: none;
+}
+
+.d-flex.gap-3 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.d-flex.gap-3 > .mb-3 {
+    flex: 1 1 200px;
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+button.btn-outline-success {
+    background-color: #111;
+    color: #fff;
+    border-radius: 50px;
+    padding: 12px 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    transition: 0.3s;
+}
+
+button.btn-outline-success:hover {
+    background-color: #333;
+}
+
+a.btn-outline-danger {
+    background-color: #e63946;
+    color: #fff;
+    border-radius: 50px;
+    padding: 12px 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a.btn-outline-danger:hover {
+    background-color: #b02a37;
+    color: #fff;
+}
+
+.text-danger {
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.text-muted {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+@@media (max-width: 768px) {
+    .d-flex.gap-3 {
+        flex-direction: column;
+    }
+}
+</style>
+
+<div class="container">
+    <h3>Create Product</h3>
+
+    <form method="post" enctype="multipart/form-data">
+
+        <div class="mb-3">
+            <label for="ProductName" class="form-label">Product Name <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" name="ProductName" placeholder="Air Max 270, Jordan 1 etc.">
+        </div>
+
+        <div class="mb-3">
+            <label for="ProductImage" class="form-label">Product Image</label>
+            <input type="file" class="form-control" name="image">
+            <small class="text-muted">Upload a high-quality product image</small>
+        </div>
+
+        <div class="mb-3">
+            <label for="ProductDescription" class="form-label">Product Description</label>
+            <textarea class="form-control" name="ProductDescription" rows="4" placeholder="Enter product description here..."></textarea>
+        </div>
+
+        <div class="d-flex gap-3">
+            <div class="mb-3">
+                <label for="ProductPrice" class="form-label">Product Price</label>
+                <input type="number" class="form-control" name="ProductPrice" min="10" placeholder="e.g. 9999">
+            </div>
+
+            <div class="mb-3">
+                <label for="ProductStock" class="form-label">Product Stock</label>
+                <input type="number" class="form-control" name="ProductStock" min="1" placeholder="Available quantity">
+            </div>
+
+            <div class="mb-3">
+                <label for="Color" class="form-label">Product Color</label>
+                <input type="text" class="form-control" name="Color" placeholder="Black, White, Red">
+                <small class="text-muted">Separate colors with commas</small>
+            </div>
+
+            <div class="mb-3">
+                <label for="Size" class="form-label">Product Sizes</label>
+                <input type="text" class="form-control" name="Size" placeholder="S, M, L, XL">
+                <small class="text-muted">Separate sizes with commas</small>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="Category" class="form-label">Category</label>
+            @{
+                var categoryList = Enum.GetValues(typeof(ProductCategory))
+                                       .Cast<ProductCategory>()
+                                       .Select(c => new SelectListItem
+                                       {
+                                           Value = ((int)c).ToString(),
+                                           Text = c.ToString()
+                                       }).ToList();
+            }
+            @Html.DropDownListFor(model => model.Category, categoryList, "Select Category", new { @class = "form-control" })
+        </div>
+
+        <div class="text-center mt-3">
+            <button class="btn btn-outline-success me-2" type="submit">Create Product</button>
+            <!-- Remove Product Button -->
+            <a class="btn btn-outline-danger" asp-controller="Product" asp-action="Remove" 
+               asp-route-ProductId="@Model?.ProductId">Remove Product</a>
+        </div>
+
+        @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+        {
+            <div class="text-center text-danger mt-3">@ViewBag.ErrorMessage</div>
+        }
+    </form>
+</div>

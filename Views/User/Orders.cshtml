@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Orders";
+}
+
+<div class="order-container">
+    <h2 class="order-heading">Thank You for Shopping with Us!</h2>
+    <p class="order-subtext">Here we will show all the orders of the current user.</p>
+</div>
+
+<style>
+    .order-container {
+        max-width: 700px;
+        margin: 50px auto;
+        padding: 30px;
+        background: #f9f9f9;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .order-heading {
+        color: #2c3e50;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .order-subtext {
+        color: #34495e;
+        font-size: 1.2rem;
+    }
+
+    /* Optional hover effect */
+    .order-container:hover {
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        transform: translateY(-3px);
+        transition: all 0.3s ease-in-out;
+    }
+</style>

@@ -1,0 +1,84 @@
+﻿@model P2WebMVC.Models.ViewModels.OrderView
+
+@{
+  ViewData["Title"] = "Payment";
+}
+
+@if (Model.Order != null)
+{
+  <div>
+    <p id="orderId">@Model.Order.OrderId</p>
+    <p> Order total : <span id="amount">@Model.Order.TotalPrice</span> <span>INR</span> </p>
+  </div>
+}
+
+<!-- Razorpay script -->
+<script defer src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+<!-- Fullscreen loader -->
+<div id="payment-loader"
+  class="position-fixed top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-white"
+  style="z-index: 9999; display: none;">
+  <div class="spinner-border text-dark" style="width: 3rem; height: 3rem;" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="mt-3 text-dark">Processing your payment...</div>
+</div>
+
+<script>
+  async function payNow() {
+    const loader = document.getElementById("payment-loader");
+    loader.style.display = "flex";
+
+    const OrderId = document.getElementById("orderId").innerText.trim();
+    const Amount = parseInt(document.getElementById("amount").innerText.trim(), 10);
+    const Currency = "INR";
+    const formBody = { Amount, Currency, OrderId };
+
+    try {
+      const res = await fetch("/PaymentApi/CreatePaymentIntent", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formBody),
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+
+        const options = {
+          key: 'rzp_test_RgG9AwfnysizZu',
+          amount: data.amount,
+          currency: data.currency,
+          name: 'Irfan',
+          description: 'Payment Transaction',
+          order_id: data.OrderId,
+          prefill: {
+            name: "irfan",
+            email: "irfanusuf33@gmail.com",
+            contact: "9906520959"
+          },
+          handler: function (response) {
+            loader.style.display = "none";
+            window.location.href = `http://localhost:5153/Order/PaymentSuccess?OrderId=${OrderId}`;
+          },
+          modal: {
+            ondismiss: function () {
+              loader.style.display = "none";
+            }
+          },
+          theme: { color: '#F37254' }
+        };
+
+        new Razorpay(options).open();
+      } else {
+        loader.style.display = "none";
+        alert("Something went wrong");
+      }
+    } catch (error) {
+      loader.style.display = "none";
+      console.error(error);
+    }
+  }
+
+  payNow();
+</script>

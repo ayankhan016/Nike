@@ -1,0 +1,185 @@
+﻿@model P2WebMVC.Models.ViewModels.OrderView
+
+@{
+    ViewData["Title"] = "Recent Orders";
+}
+
+<style>
+    body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        background-color: #f9f9f9;
+    }
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #111;
+        border-bottom: 2px solid #111;
+        display: inline-block;
+        margin-bottom: 2rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .order-card {
+        background-color: #fff;
+        border-radius: 16px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        padding: 1.5rem;
+        transition: all 0.3s ease;
+        border: 1px solid #eee;
+    }
+
+    .order-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+        border-color: #111;
+    }
+
+    .order-id {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #111;
+        text-transform: uppercase;
+    }
+
+    .order-price {
+        font-size: 1rem;
+        font-weight: 800;
+        color: #000;
+    }
+
+    .order-info p {
+        margin: 4px 0;
+        color: #555;
+        font-size: 0.9rem;
+    }
+
+    .order-info span {
+        color: #111;
+        font-weight: 600;
+    }
+
+    .item-list {
+        margin-top: 1rem;
+        border-top: 1px solid #eee;
+        padding-top: 1rem;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.4rem 0;
+    }
+
+    .item img {
+        width: 48px;
+        height: 48px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    .item p {
+        margin: 0;
+    }
+
+    .item-name {
+        font-weight: 600;
+        color: #111;
+        font-size: 0.95rem;
+    }
+
+    .item-details {
+        color: #555;
+        font-size: 0.85rem;
+    }
+
+    .btn-nike {
+        display: inline-block;
+        width: 100%;
+        padding: 0.75rem;
+        background-color: #111;
+        color: white;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 30px;
+        font-size: 0.9rem;
+        text-align: center;
+        letter-spacing: 0.5px;
+        transition: all 0.3s ease;
+        border: 1px solid transparent;
+    }
+
+    .btn-nike:hover {
+        background-color: white;
+        color: #111;
+        border: 1px solid #111;
+    }
+
+    /* Responsive */
+    @@media (max-width: 768px) {
+        .order-card {
+            padding: 1.2rem;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+</style>
+
+<div class="max-w-6xl mx-auto px-4 py-10">
+    <h1>Recent Orders</h1>
+
+    @if (Model.Orders != null && Model.Orders.Any())
+    {
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            @foreach (var order in Model.Orders)
+            {
+                <div class="order-card">
+                    <div class="mb-4 flex justify-between items-center">
+                        <h2 class="order-id">Order #@order.OrderId.ToString().Substring(0,8)</h2>
+                        <span class="order-price">₹@order.TotalPrice</span>
+                    </div>
+
+                    <div class="order-info">
+                        <p><span>Order Status:</span> @order.OrderStatus</p>
+                        <p><span>Payment Status:</span> @order.PaymentStatus</p>
+                        <p><span>Payment Mode:</span> @order.PaymentMode</p>
+                    </div>
+
+                    @if (order.OrderProducts != null && order.OrderProducts.Any())
+                    {
+                        <div class="item-list">
+                            <h3 class="font-semibold text-gray-800 mb-2">Items:</h3>
+                            @foreach (var item in order.OrderProducts)
+                            {
+                                <div class="item">
+                                    <img src="@item.Product.ProductImage" alt="@item.Product.ProductName" />
+                                    <div>
+                                        <p class="item-name">@item.Product.ProductName</p>
+                                        <p class="item-details">Qty: @item.Quantity | ₹@item.Product.ProductPrice</p>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    }
+
+                    <div class="mt-4">
+                        <a class="btn-nike" asp-controller="Order" asp-action="Payment" asp-route-orderId="@order.OrderId">
+                            View / Pay
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="text-center text-gray-500 text-lg mt-10">
+            No recent orders found.
+        </div>
+    }
+</div>

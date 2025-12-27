@@ -1,0 +1,276 @@
+﻿@model P2WebMVC.Models.ViewModels.CartView
+@{
+    ViewData["Title"] = "Nike Checkout";
+}
+
+<style>
+    body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        background-color: #f5f5f5;
+        color: #111;
+    }
+
+    /* Overall Section */
+    .checkout-section {
+        background-color: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        padding: 50px;
+        margin-top: 50px;
+    }
+
+    .checkout-heading {
+        font-weight: 700;
+        letter-spacing: -0.3px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 40px;
+    }
+
+    .checkout-heading i {
+        font-size: 2.5rem;
+        color: #111;
+    }
+
+    /* Address Form */
+    .address-form {
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        border-radius: 14px;
+        padding: 30px 25px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .address-form:hover {
+        box-shadow: 0 3px 14px rgba(0, 0, 0, 0.08);
+    }
+
+    .address-form h4 {
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+
+    .address-form input {
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        padding: 12px;
+        font-size: 1rem;
+        transition: border-color 0.2s ease;
+    }
+
+    .address-form input:focus {
+        border-color: #111;
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
+    }
+
+    /* Buttons */
+    .btn-nike {
+        background-color: #111;
+        color: #fff;
+        border-radius: 40px;
+        padding: 14px 30px;
+        font-weight: 600;
+        font-size: 1rem;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+    }
+
+    .btn-nike:hover {
+        background-color: #333;
+        color: #fff;
+        transform: translateY(-2px);
+    }
+
+    /* Total Section */
+    .amount-container {
+        border-top: 1px solid #eee;
+        padding-top: 25px;
+        margin-top: 35px;
+        background-color: #fafafa;
+        border-radius: 10px;
+        padding: 25px;
+    }
+
+    .amount-container h4 {
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .amount-container span {
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+
+    /* Order Summary */
+    .order-summary {
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        border-radius: 14px;
+        padding: 30px 25px;
+        max-height: 600px;
+        overflow-y: auto;
+        transition: box-shadow 0.3s ease;
+    }
+
+    .order-summary:hover {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+    }
+
+    .order-summary h4 {
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+
+    .order-summary img {
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .order-summary .fw-semibold {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    /* Address Preview */
+    .address-section {
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        border-radius: 14px;
+        padding: 25px;
+        margin-top: 30px;
+    }
+
+    .address-section h4 {
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .text-danger {
+        color: #e63946 !important;
+    }
+
+    /* Empty Cart */
+    .empty-cart {
+        text-align: center;
+        margin: 80px 0;
+    }
+
+    .empty-cart p {
+        font-size: 1.2rem;
+    }
+
+    .empty-cart a {
+        color: #111;
+        font-weight: 500;
+        text-decoration: underline;
+        transition: color 0.2s ease;
+    }
+
+    .empty-cart a:hover {
+        color: #333;
+    }
+
+    /* Responsive */
+    @@media (max-width: 992px) {
+        .checkout-section {
+            padding: 30px 20px;
+        }
+
+        .order-summary {
+            margin-top: 30px;
+        }
+
+        .amount-container span {
+            font-size: 1.6rem;
+        }
+    }
+</style>
+
+<div class="container py-5">
+    @if (Model?.Cart?.CartTotal == 0)
+    {
+        <div class="empty-cart">
+            <p class="text-danger fw-bold">Your Cart is empty</p>
+            <p><a asp-controller="Product" asp-action="Index">Explore our new Nike Products</a></p>
+            <p><a asp-controller="Order" asp-action="Recent">View Recent Orders</a></p>
+        </div>
+    }
+    else
+    {
+        <div class="checkout-section">
+            <div class="checkout-heading">
+                <i class="bi bi-cart-check"></i>
+                <h3>Checkout</h3>
+            </div>
+
+            <div class="row">
+                <!-- Address Form -->
+                <div class="col-lg-7 mb-4">
+                    <form class="address-form mb-4" method="post" asp-controller="User" asp-action="CreateAddress" asp-route-CartId="@Model?.Cart?.CartId">
+                        <h4><i class="bi bi-geo-alt-fill"></i> @(Model?.Address == null ? "Add Address" : "Update Address")</h4>
+                        <div class="row g-3">
+                            <div class="col-md-6"><input type="text" class="form-control" name="FirstName" value="@Model?.Address?.FirstName" placeholder="First Name" /></div>
+                            <div class="col-md-6"><input type="text" class="form-control" name="LastName" value="@Model?.Address?.LastName" placeholder="Last Name" /></div>
+                            <div class="col-md-4"><input type="text" class="form-control" name="Street" value="@Model?.Address?.Street" placeholder="Street" /></div>
+                            <div class="col-md-4"><input type="text" class="form-control" name="City" value="@Model?.Address?.City" placeholder="City" /></div>
+                            <div class="col-md-4"><input type="text" class="form-control" name="District" value="@Model?.Address?.District" placeholder="District" /></div>
+                            <div class="col-md-4"><input type="text" class="form-control" name="Pincode" value="@Model?.Address?.Pincode" placeholder="Pincode" /></div>
+                            <div class="col-md-4"><input type="text" class="form-control" name="State" value="@Model?.Address?.State" placeholder="State" /></div>
+                            <div class="col-md-4"><input type="text" class="form-control" name="Country" value="@Model?.Address?.Country" placeholder="Country" /></div>
+                            <div class="col-md-6"><input type="text" class="form-control" name="Phone" value="@Model?.Address?.Phone" placeholder="Phone Number" /></div>
+                            <div class="col-md-6"><input type="text" class="form-control" name="Landmark" value="@Model?.Address?.Landmark" placeholder="Landmark" /></div>
+                        </div>
+                        <div class="mt-4">
+                            <button type="submit" class="btn btn-nike w-100">@((Model?.Address == null) ? "Add Address" : "Update Address")</button>
+                        </div>
+                    </form>
+
+                    <!-- Total Amount -->
+                    <div class="amount-container">
+                        <h4><i class="bi bi-wallet2"></i> Total Amount</h4>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span>@Model?.Cart?.CartTotal</span> <span>Rs</span>
+                            <a class="btn btn-nike" asp-controller="Order" asp-action="Create" asp-route-CartId="@Model?.Cart?.CartId">Complete Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="col-lg-5">
+                    <div class="order-summary mb-4">
+                        <h4><i class="bi bi-box-seam"></i> Order Summary</h4>
+                        @if (Model?.CartProducts != null)
+                        {
+                            @foreach (var product in Model.CartProducts)
+                            {
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="flex-grow-1">
+                                        <p class="mb-1 fw-semibold">@product?.Product?.ProductName (@product?.Color)</p>
+                                        <p class="mb-0 text-muted">Qty: @product?.Quantity × Rs @product?.Product?.ProductPrice</p>
+                                    </div>
+                                    <img src="@product?.Product?.ProductImage" />
+                                </div>
+                            }
+                        }
+                    </div>
+
+                    <!-- Shipping Address -->
+                    @if (Model?.Address != null)
+                    {
+                        <div class="address-section">
+                            <h4><i class="bi bi-truck"></i> Shipping Address</h4>
+                            <p class="mb-1">@Model?.Address?.FirstName @Model?.Address?.LastName</p>
+                            <p class="mb-1">@Model?.Address?.Street, @Model?.Address?.City, @Model?.Address?.District, @Model?.Address?.Pincode</p>
+                            <p class="mb-0">@Model?.Address?.State, @Model?.Address?.Country</p>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>
