@@ -1,4 +1,4 @@
-![image alt]()
+![image alt](https://github.com/ayankhan016/Nike/blob/4591755e9cbfe3732a88cd42d06afeb143a194a3/Screenshot%202025-12-27%20160106.png)
 
 # Download nugget packages through dotnet ClI
 
