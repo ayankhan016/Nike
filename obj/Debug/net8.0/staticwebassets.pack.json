@@ -21,6 +21,26 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\images\\Air Jordan.png",
+      "PackagePath": "staticwebassets\\images\\Air Jordan.png"
+    },
+    {
+      "Id": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\images\\AirForce1.png",
+      "PackagePath": "staticwebassets\\images\\AirForce1.png"
+    },
+    {
+      "Id": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\images\\AirMax.png",
+      "PackagePath": "staticwebassets\\images\\AirMax.png"
+    },
+    {
+      "Id": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\images\\Dunk.png",
+      "PackagePath": "staticwebassets\\images\\Dunk.png"
+    },
+    {
+      "Id": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\images\\image1.png",
+      "PackagePath": "staticwebassets\\images\\image1.png"
+    },
+    {
       "Id": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

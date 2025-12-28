@@ -713,3 +713,4 @@ C:\Users\iamay\OneDrive\Desktop\Nike-MVC\Nike-Mvc\bin\Debug\net8.0\P2WebMVC.runt
 C:\Users\iamay\OneDrive\Desktop\Nike-MVC\Nike-Mvc\bin\Debug\net8.0\P2WebMVC.pdb
 C:\Users\iamay\OneDrive\Desktop\Nike-MVC\Nike-Mvc\obj\Debug\net8.0\P2WebMVC.genruntimeconfig.cache
 C:\Users\iamay\OneDrive\Desktop\Nike-MVC\Nike-Mvc\obj\Debug\net8.0\ref\P2WebMVC.dll
+C:\Users\iamay\OneDrive\Desktop\Nike-MVC\Nike-Mvc\obj\Debug\net8.0\P2WebMVC.sourcelink.json

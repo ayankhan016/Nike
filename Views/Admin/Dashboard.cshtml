@@ -1,9 +1,78 @@
-﻿
+﻿@{
+    ViewData["Title"] = "Admin Dashboard";
+}
 
-<div class="container ">
+<style>
+    .admin-wrap {
+        max-width: 1200px;
+        margin: 80px auto;
+        padding: 20px;
+        text-align: center;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
 
-<h1> Welcome to the Secure Admin Dashboard</h1>
+    .admin-header h1 {
+        font-size: 40px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+    }
 
-<a class="btn btn-primary" asp-controller="Admin" asp-action="CreateProduct" > Create product </a>
+    .admin-header p {
+        color: #777;
+        font-size: 14px;
+    }
 
+    .admin-actions {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .admin-btn {
+        padding: 16px 36px;
+        border-radius: 40px;
+        border: 2px solid black;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 14px;
+        color: black;
+        transition: 0.3s ease;
+    }
+
+    .admin-btn:hover {
+        background: black;
+        color: white;
+    }
+
+    .admin-btn.primary {
+        background: black;
+        color: white;
+    }
+
+    .admin-btn.primary:hover {
+        background: #333;
+    }
+</style>
+
+<div class="admin-wrap">
+    <div class="admin-header">
+        <h1>Admin Dashboard</h1>
+        <p>Manage products and inventory</p>
+    </div>
+
+    <div class="admin-actions">
+        <a href="/Admin/CreateProduct" class="admin-btn primary">
+            + Add New Product
+        </a>
+
+        <a href="/Admin/ProductList" class="admin-btn">
+            View Products
+        </a>
+
+        <a href="/Product" class="admin-btn">
+            View Store
+        </a>
+    </div>
 </div>

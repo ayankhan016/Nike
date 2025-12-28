@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6NOB+3Ca5c7bQr6AXZ8G11BduuHt2UIkCo+Xfh0uOfI=",
+  "Hash": "m7acWLxr0kxCgyvyQkZxkacGgZq5ckb7ceezKRH75DA=",
   "Source": "P2WebMVC",
   "BasePath": "_content/P2WebMVC",
   "Mode": "Default",
@@ -141,6 +141,111 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\images\\Air Jordan.png",
+      "SourceId": "P2WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\",
+      "BasePath": "_content/P2WebMVC",
+      "RelativePath": "images/Air Jordan#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2fessprowb",
+      "Integrity": "AnibvXMkBJuT6Vh3y9FIggPoD+/GzO02V/l5RpxMP48=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Air Jordan.png"
+    },
+    {
+      "Identity": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\images\\AirForce1.png",
+      "SourceId": "P2WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\",
+      "BasePath": "_content/P2WebMVC",
+      "RelativePath": "images/AirForce1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8tqhnygpjx",
+      "Integrity": "/CBQM2C/C8Mhfe6HX/QL/T0SQAhkvyR9HfQa4aBUONQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\AirForce1.png"
+    },
+    {
+      "Identity": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\images\\AirMax.png",
+      "SourceId": "P2WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\",
+      "BasePath": "_content/P2WebMVC",
+      "RelativePath": "images/AirMax#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "raayolzbf9",
+      "Integrity": "XRtS6RMt1HPhRMyFNXmMSDL2pPI1OGojpVOQr9TrLJE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\AirMax.png"
+    },
+    {
+      "Identity": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\images\\Dunk.png",
+      "SourceId": "P2WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\",
+      "BasePath": "_content/P2WebMVC",
+      "RelativePath": "images/Dunk#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vp1e78ax63",
+      "Integrity": "M2fx2ffdmA1Dm6SEp808ArPJV9JNN/CO53B696gqxcw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Dunk.png"
+    },
+    {
+      "Identity": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\images\\image1.png",
+      "SourceId": "P2WebMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\",
+      "BasePath": "_content/P2WebMVC",
+      "RelativePath": "images/image1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ziko9ct53z",
+      "Integrity": "6+aSaEcWrHk79RRQh1gacHYkzoASyLjlHE1bj+ervwA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\image1.png"
     },
     {
       "Identity": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\js\\site.js",
@@ -490,6 +595,416 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "images/Air Jordan.2fessprowb.png",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\images\\Air Jordan.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "185131"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AnibvXMkBJuT6Vh3y9FIggPoD+/GzO02V/l5RpxMP48=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 27 Dec 2025 12:09:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2fessprowb"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Air Jordan.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AnibvXMkBJuT6Vh3y9FIggPoD+/GzO02V/l5RpxMP48="
+        }
+      ]
+    },
+    {
+      "Route": "images/Air Jordan.png",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\images\\Air Jordan.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "185131"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AnibvXMkBJuT6Vh3y9FIggPoD+/GzO02V/l5RpxMP48=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 27 Dec 2025 12:09:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AnibvXMkBJuT6Vh3y9FIggPoD+/GzO02V/l5RpxMP48="
+        }
+      ]
+    },
+    {
+      "Route": "images/AirForce1.8tqhnygpjx.png",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\images\\AirForce1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "155682"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/CBQM2C/C8Mhfe6HX/QL/T0SQAhkvyR9HfQa4aBUONQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 27 Dec 2025 12:09:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8tqhnygpjx"
+        },
+        {
+          "Name": "label",
+          "Value": "images/AirForce1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/CBQM2C/C8Mhfe6HX/QL/T0SQAhkvyR9HfQa4aBUONQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/AirForce1.png",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\images\\AirForce1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "155682"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/CBQM2C/C8Mhfe6HX/QL/T0SQAhkvyR9HfQa4aBUONQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 27 Dec 2025 12:09:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/CBQM2C/C8Mhfe6HX/QL/T0SQAhkvyR9HfQa4aBUONQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/AirMax.png",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\images\\AirMax.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "210338"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XRtS6RMt1HPhRMyFNXmMSDL2pPI1OGojpVOQr9TrLJE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 27 Dec 2025 12:10:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XRtS6RMt1HPhRMyFNXmMSDL2pPI1OGojpVOQr9TrLJE="
+        }
+      ]
+    },
+    {
+      "Route": "images/AirMax.raayolzbf9.png",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\images\\AirMax.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "210338"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XRtS6RMt1HPhRMyFNXmMSDL2pPI1OGojpVOQr9TrLJE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 27 Dec 2025 12:10:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "raayolzbf9"
+        },
+        {
+          "Name": "label",
+          "Value": "images/AirMax.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XRtS6RMt1HPhRMyFNXmMSDL2pPI1OGojpVOQr9TrLJE="
+        }
+      ]
+    },
+    {
+      "Route": "images/Dunk.png",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\images\\Dunk.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "138759"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M2fx2ffdmA1Dm6SEp808ArPJV9JNN/CO53B696gqxcw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 27 Dec 2025 12:10:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-M2fx2ffdmA1Dm6SEp808ArPJV9JNN/CO53B696gqxcw="
+        }
+      ]
+    },
+    {
+      "Route": "images/Dunk.vp1e78ax63.png",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\images\\Dunk.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "138759"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M2fx2ffdmA1Dm6SEp808ArPJV9JNN/CO53B696gqxcw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 27 Dec 2025 12:10:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vp1e78ax63"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Dunk.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-M2fx2ffdmA1Dm6SEp808ArPJV9JNN/CO53B696gqxcw="
+        }
+      ]
+    },
+    {
+      "Route": "images/image1.png",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\images\\image1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "585776"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6+aSaEcWrHk79RRQh1gacHYkzoASyLjlHE1bj+ervwA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 27 Dec 2025 11:49:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6+aSaEcWrHk79RRQh1gacHYkzoASyLjlHE1bj+ervwA="
+        }
+      ]
+    },
+    {
+      "Route": "images/image1.ziko9ct53z.png",
+      "AssetFile": "C:\\Users\\iamay\\OneDrive\\Desktop\\Nike-MVC\\Nike-Mvc\\wwwroot\\images\\image1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "585776"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6+aSaEcWrHk79RRQh1gacHYkzoASyLjlHE1bj+ervwA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 27 Dec 2025 11:49:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ziko9ct53z"
+        },
+        {
+          "Name": "label",
+          "Value": "images/image1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6+aSaEcWrHk79RRQh1gacHYkzoASyLjlHE1bj+ervwA="
         }
       ]
     },

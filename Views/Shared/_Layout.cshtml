@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/output.css" asp-append-version="true" />
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 
 <body class="bg-white text-gray-900">
@@ -26,11 +26,11 @@
 
         <!-- Center Links -->
         <div class="hidden md:flex items-center gap-4">
-            <a asp-area="" asp-controller="Product" asp-action="Index" asp-route-Category="General"
+            <a asp-area="" asp-controller="Product" asp-action="Index" asp-route-Category="Men"
                class="text-xs font-bold uppercase hover:text-black transition">Men</a>
-            <a asp-area="" asp-controller="Product" asp-action="Index" asp-route-Category="Electronics"
+            <a asp-area="" asp-controller="Product" asp-action="Index" asp-route-Category="Women"
                class="text-xs font-bold uppercase hover:text-black transition">Women</a>
-            <a asp-area="" asp-controller="Product" asp-action="Index" asp-route-Category="Clothing"
+            <a asp-area="" asp-controller="Product" asp-action="Index" asp-route-Category="Sneakers"
                class="text-xs font-bold uppercase hover:text-black transition">Snkrs</a>
         </div>
 
@@ -137,9 +137,9 @@
         <div>
             <h4 class="text-sm font-semibold mb-2">Categories</h4>
             <ul class="space-y-1 text-gray-700 text-sm">
-                <li><a asp-controller="Product" asp-action="Index" asp-route-Category="Electronics" class="hover:text-gray-900 transition">Electronics</a></li>
-                <li><a asp-controller="Product" asp-action="Index" asp-route-Category="Clothing" class="hover:text-gray-900 transition">Clothing</a></li>
-                <li><a asp-controller="Product" asp-action="Index" asp-route-Category="Automotive" class="hover:text-gray-900 transition">Automotive</a></li>
+                <li><a asp-controller="Product" asp-action="Index" asp-route-Category="Men" class="hover:text-gray-900 transition">Men</a></li>
+                <li><a asp-controller="Product" asp-action="Index" asp-route-Category="Women" class="hover:text-gray-900 transition">Women</a></li>
+                <li><a asp-controller="Product" asp-action="Index" asp-route-Category="Sneakers" class="hover:text-gray-900 transition">Sneakers</a></li>
             </ul>
         </div>
 
